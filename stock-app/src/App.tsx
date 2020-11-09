@@ -6,9 +6,6 @@ import {ChartCont} from './chart/ChartCont';
 
 function App() {
   let [symbolData,setSymbolData]:any = useState({});
-  useEffect(()=>{
-    console.log(symbolData);
-  },[symbolData]);
   return (
     <>
       <Search setSymbolData={setSymbolData}></Search>,
